@@ -189,7 +189,8 @@ body {
 
 @media (max-width: 500px) {
     .timer {
-        font-size: 3.5rem;
+        /* FIX: Use a responsive font size to prevent overflow on small screens */
+        font-size: clamp(2.5rem, 12vw, 3.5rem);
     }
     
     .btn {
@@ -367,4 +368,3 @@ body.dark .theme-toggle .toggle-ball {
 body.dark .theme-toggle .toggle-ball::after {
   background: #2e294e;
 }
-
